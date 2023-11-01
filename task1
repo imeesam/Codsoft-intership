@@ -1,0 +1,43 @@
+#include<iostream>
+
+using namespace std;
+// Codsoft internship 
+// Intern name; Syed Muhammad Meesam Abbas
+
+int main() {
+    double n1;
+    double n2;
+    char oper;
+     cout << "Task 1" << endl;
+    cout << "Calculator!" << endl;
+    cout << "Enter First Number: ";
+    cin >> n1;
+    cout << "Enter Second Number: ";
+    cin >> n2;
+
+    cout << "Choose an operation [+, -, *, /]: ";
+    cin >> oper;
+
+    switch (oper) {
+        case '+':
+            cout << "Result: " << n1 + n2 << endl;
+            break;
+        case '-':
+            cout << "Result: " << n1 - n2 << endl;
+            break;
+        case '*':
+            cout << "Result: " << n1 * n2 << endl;
+            break;
+        case '/':
+            if (n2 == 0) {
+                cout << "undefined" << endl;
+            } else {
+                cout << "Result: " << n1 / n2 << endl;
+            }
+            break;
+        default:
+            cout << "Operation does not exist." << endl;
+    }
+
+    return 0;
+}
